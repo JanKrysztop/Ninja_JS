@@ -1,16 +1,9 @@
-alert("Hello World!");
+var youLikeMeat = false;
+var myNum = 11;
 
-/* 
-multiline coment
-alert("Hello World!");
-*/
+if (youLikeMeat){
+    document.write("you like meat");
+} else {
+    document.write("you hate meat")
+}
 
-// single line coment
-
-
-/*
-- JavaScript is case sensitive
-- Contains many statements, all ending with semicolon;
-- Not sensitive to whitespace or line breaks
-- Runs from top to bottom
-*/
