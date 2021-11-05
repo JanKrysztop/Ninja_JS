@@ -1,28 +1,23 @@
-var myString = 'I\'m a "fun ninja" string';
+//SLICE
 
-console.log(myString.length);
+var str = "hello, world";
 
-console.log(myString.toUpperCase());
+console.log(str);
 
-console.log(myString.toLowerCase());
+var str2 = str.slice(2, 9);
 
-console.log(myString.indexOf("fun"));
+console.log(str2);
 
+var str3 = str.slice(2);
 
-if (myString.indexOf("ninja") === -1) {
+console.log(str3);
 
-    console.log("the words ninja is not in the string");
+//SPLIT
 
-} else {
+var tags = "meat, ham, salami, pork, beef, chicken";
 
-    console.log("the word ninja start at position " + myString.indexOf("ninja"))
+console.log(tags);
 
-}
+var tagsArray = tags.split(",")
 
-
-var string1 = "Abc";
-var string2 = "Bcd";
-
-console.log(string1 === string2);
-
-console.log(string1 < string2);
+console.log(tagsArray);
