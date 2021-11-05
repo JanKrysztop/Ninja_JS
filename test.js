@@ -1,36 +1,23 @@
-var myArray = [];
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
 
-myArray[0] = 25;
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Shaun";
+myCar.drive = function() {console.log("now driving");};
 
-myArray[1] = 35;
+console.log(myCar.driver);
 
-myArray[2] = true;
+myCar.drive();
 
-myArray[3] = "hello";
+var myCar2 = {
+    maxSpeed: 70, 
+    driver: "Johnny", 
+    drive: function(speed, time) {
+        console.log(speed * time);
+    } 
+};
 
-console.log(myArray);
-
-myArray[2] = false;
-
-console.log(myArray);
-
-var myArray2 = [10, 20, "hi", false];
-
-console.log(myArray2);
-
-// Another way of creating arrays:
-
-var myArray3 = new Array();
-
-var myArray3 = new Array(5);
-
-console.log(myArray3);
-//--------------------------------
-
-//Methods
-
-console.log(myArray2.length);
-
-console.log(myArray2.sort());
-
-console.log(myArray2.reverse());
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
