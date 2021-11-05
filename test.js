@@ -1,19 +1,15 @@
-function getAverage (a, b, c, d, e, f) {
+var a = "5";
+var b = 5;
 
-    var average = (a + b + c + d + e + f) / 6; //local variable
-    console.log(average);
-    return average;
-}
+console.log(a + b);
+console.log(typeof(a + b))
 
- 
+console.log(Math.round(7.6));
 
-var myResult = getAverage(7, 12, 14, 6, 77, 2); //global variable
+console.log(Math.floor(7.6));
 
+console.log(Math.ceil(7.6));
 
-function logResult() {
+console.log(Math.max(7, 4, 5, 8));
 
-    console.log("the average is " + myResult.toFixed(2));
-
-}
-
-logResult();
+console.log(Math.PI);
