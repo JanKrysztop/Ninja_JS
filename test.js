@@ -1,23 +1,36 @@
-//SLICE
+var myArray = [];
 
-var str = "hello, world";
+myArray[0] = 25;
 
-console.log(str);
+myArray[1] = 35;
 
-var str2 = str.slice(2, 9);
+myArray[2] = true;
 
-console.log(str2);
+myArray[3] = "hello";
 
-var str3 = str.slice(2);
+console.log(myArray);
 
-console.log(str3);
+myArray[2] = false;
 
-//SPLIT
+console.log(myArray);
 
-var tags = "meat, ham, salami, pork, beef, chicken";
+var myArray2 = [10, 20, "hi", false];
 
-console.log(tags);
+console.log(myArray2);
 
-var tagsArray = tags.split(",")
+// Another way of creating arrays:
 
-console.log(tagsArray);
+var myArray3 = new Array();
+
+var myArray3 = new Array(5);
+
+console.log(myArray3);
+//--------------------------------
+
+//Methods
+
+console.log(myArray2.length);
+
+console.log(myArray2.sort());
+
+console.log(myArray2.reverse());
