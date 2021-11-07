@@ -11,4 +11,4 @@ myForm.onsubmit = function(){
         return true;
     }
 
-};
+}; 
